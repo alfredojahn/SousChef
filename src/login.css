@@ -1,19 +1,81 @@
 #heading {
-    height: 10em;
     
+    padding: 20px;
     text-decoration: overline;
-    text-decoration-color: green;
-    text-shadow: 3px 2px red;
     align-items: center;
     text-align: center;
+    line-height: 1.5;
+    font-family: "Times New Roman", Times, serif;
+    color: gray;
+    text-align: center;
+    font-size: 1.5em;
+    
 }
 
-h1 {
-    align-self: center;
-}
-
-#loginBox {
-    height: 100px;
-    background: gray;
+#boton {
+    margin: auto;
     align-items: center;
+    text-align: center;
+    margin-top: 10px;
 }
+
+#texto{
+    
+    font-weight: bold;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    color:gray;
+    animation-name: textcolor;
+    animation-duration: 8s;
+}
+
+#back {
+    margin-top: 100px;
+    padding: 15px;
+    background-color: white;
+    margin: auto;
+    width: 75%;
+    box-shadow:  10px 10px 5px grey;
+    height: 35em;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #01FF70;
+  }
+  
+  #imagen:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+@keyframes textcolor{
+    0%   {color: white;}
+    50%  {color:white;}
+    75%  {color:black;}
+    100% {color:gray;}
+  }
