@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import big from '../img/big-back.jpg'
 
 
+
 function Login() {
     
     return (
@@ -19,8 +20,9 @@ function Login() {
                 </div>
             </div>
             
-            <div id="texto">
-                ¿Y tú, que estás esperando?
+            <div id="texto" >
+                <p>Cocinar nunca fue tan fácil. Distintas recetas que se adptan a a ti y a tu estilo de vida.</p>
+                <p id="power">¿Y tú, que estás esperando?</p>
             </div>
             <div id="boton">
                 <Button href="/User"variant="outlined" size="large" color="primary" >
