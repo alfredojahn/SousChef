@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './user.css';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -6,11 +6,15 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
+import Navbar from './navbar'
+
 
 
 const User = () =>{
     const bull = <span >•</span>;
     return(
+        <>
+        <Navbar></Navbar>
         <Card id="carta">
             <CardContent>
                 <Typography  color="textSecondary" gutterBottom>
@@ -26,6 +30,7 @@ const User = () =>{
                 <Button size="small">Edit Username</Button>
             </CardActions>
         </Card>
+        </>
     )
 }
 
