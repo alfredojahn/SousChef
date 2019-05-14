@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Route exact path='/' component={Login}/>
       <Route path='/User' component={User}/>
-      <Route path='/dashboard' component={Dashboard}/>
+      <Route path='/Dashboard' component={Dashboard}/>
     </div>
     </BrowserRouter>
     
