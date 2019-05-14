@@ -2,7 +2,7 @@ import React from 'react';
 import './login.css';
 import Button from '@material-ui/core/Button';
 //import salt from './img/salt-chef.jpg'
-import big from './img/big-back.jpg'
+import big from '../img/big-back.jpg'
 
 
 function Login() {
@@ -23,7 +23,7 @@ function Login() {
                 ¿Y tú, que estás esperando?
             </div>
             <div id="boton">
-                <Button variant="outlined" size="large" color="primary" >
+                <Button href="/User"variant="outlined" size="large" color="primary" >
                     Google Login
                 </Button>
             </div>
