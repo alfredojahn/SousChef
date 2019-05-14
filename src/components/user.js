@@ -5,8 +5,10 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 
-import Navbar from './navbar'
+import MenuAppBar from './navbar';
+import Recetas from '../recetas/recetas';
 
 
 
@@ -14,7 +16,7 @@ const User = () =>{
     const bull = <span >•</span>;
     return(
         <>
-        <Navbar></Navbar>
+        <MenuAppBar></MenuAppBar>
         <Card id="carta">
             <CardContent>
                 <Typography  color="textSecondary" gutterBottom>
@@ -30,6 +32,10 @@ const User = () =>{
                 <Button size="small">Edit Username</Button>
             </CardActions>
         </Card>
+        <Paper id="recetas">
+            <h1> Recetas Favoritas </h1>
+            <Recetas></Recetas>
+        </Paper>
         </>
     )
 }
