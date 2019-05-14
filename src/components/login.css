@@ -9,7 +9,8 @@
     color: gray;
     text-align: center;
     font-size: 1.5em;
-    
+    animation-name: textspace;
+    animation-duration: 2s;
 }
 
 #boton {
@@ -20,33 +21,28 @@
 }
 
 #texto{
-    
-    font-weight: bold;
+    width: 50%;
     margin: auto;
     align-items: center;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     text-transform: uppercase;
     color:gray;
-    animation-name: textcolor;
-    animation-duration: 6s;
+    
 }
 
-#back {
-    margin-top: 100px;
-    padding: 15px;
-    background-color: white;
-    margin: auto;
-    width: 75%;
-    box-shadow:  10px 10px 5px grey;
-    height: 35em;
-    overflow: hidden;
+#power {
+  font-weight: bold;
+  animation-name: textcolor;
+  animation-duration: 8s;
 }
+
+
 .container img{
-    width: 100%;
+    width: 100%; 
 }
 
-.overlay {
+.overlay  {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -78,4 +74,45 @@
     50%  {color:white;}
     75%  {color:black;}
     100% {color:gray;}
+  }
+
+  @keyframes textspace{
+    0%   {color: white;}
+
+    100% {color:gray;}
+  }
+
+  @media only screen and (min-width: 600px) {
+    #back {
+      margin-top: 100px;
+      padding: 15px;
+      background-color: white;
+      margin: auto;
+      width: 85%;
+      box-shadow:  10px 10px 5px grey;
+      height: 34em;
+      overflow: hidden;
+     
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #texto {
+      width: 90%;
+      margin-bottom: 80px;
+    }
+    #back{
+      padding: 0px;
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+      height: 45em;
+    }
+
+    .container img{
+      margin-bottom: 50px;
+  }
+    #heading {
+      line-height: 3;
+    }
   }
