@@ -54,9 +54,9 @@ class MenuAppBar extends React.Component {
     const open = Boolean(anchorEl);
 
     return (
-      <div className={classes.root}>
+      <div className={classes.root} >
         
-        <AppBar position="static">
+        <AppBar position="static" style={{background:'#85144b'}}>
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />

@@ -7,3 +7,8 @@
 .container2{
     text-align: center
 }
+
+#rec {
+    margin: auto;
+    width:95%;
+}
