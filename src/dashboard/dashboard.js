@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import Recetas from '../recetas/recetas';
+import Paper from '@material-ui/core/Paper';
+
 
 import MenuAppBar from '../components/navbar'
 
@@ -74,13 +76,23 @@ const styles = theme => ({
       [theme.breakpoints.up('md')]: {
         display: 'none',
       },
+      input: {
+        marginLeft: 8,
+        flex: 1,
+      },
+      iconButton: {
+        padding: 10,
+      },
+      Paper: {
+        width: 10,
+      }
     },
   });
 
     
 
 class dashboard extends Component {
-
+    
     state = {
         anchorEl: null,
         mobileMoreAnchorEl: null,
@@ -117,11 +129,17 @@ class dashboard extends Component {
                 <h2>
                     SOUS-CHEFF
                 </h2>
-                <h4>
-                    Inventa, prepara, come con ingredientes a la mano.
-                </h4>
+                <div>
+                <form class="pure-form">
+                  <input type="text" class="pure-input"></input>
+                  <button type="submit" class="pure-button" >Search</button>
+                </form>
+                </div>
+        <Paper id="rec">
+            <h1> Recetas Sugeridas </h1>
+            <Recetas></Recetas>
+        </Paper>
       </div>
-                <Recetas />
       </div>
     );
   }
