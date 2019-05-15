@@ -25,7 +25,7 @@ function Login() {
                 <p id="power">¿Y tú, que estás esperando?</p>
             </div>
             <div id="boton">
-                <Button href="/User"variant="outlined" size="large" color="primary" >
+                <Button href="/Dashboard"variant="outlined" size="large" color="primary" >
                     Google Login
                 </Button>
             </div>
