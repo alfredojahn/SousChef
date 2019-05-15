@@ -130,11 +130,14 @@ class dashboard extends Component {
                     SOUS-CHEFF
                 </h2>
                 <div>
-                <form class="pure-form">
+                <div id="search">
+                  <form className="pure-form">
                   <input type="text" class="pure-input"></input>
                   <button type="submit" class="pure-button" >Search</button>
                 </form>
                 </div>
+                
+      </div>
         <Paper id="rec">
             <h1> Recetas Sugeridas </h1>
             <Recetas></Recetas>
