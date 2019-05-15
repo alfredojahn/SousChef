@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
 import Recetas from '../recetas/recetas';
-import Paper from '@material-ui/core/Paper';
+
 
 
 import MenuAppBar from '../components/navbar'
@@ -138,10 +138,10 @@ class dashboard extends Component {
                 </div>
                 
       </div>
-        <Paper id="rec">
-            <h1> Recetas Sugeridas </h1>
+        <div id="rec">
+            <h2> Recetas Sugeridas </h2>
             <Recetas></Recetas>
-        </Paper>
+        </div>
       </div>
       </div>
     );

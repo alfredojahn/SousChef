@@ -14,7 +14,7 @@ function Login() {
                 <h1 id="loginBox">Sous-Chef</h1>
             </div>
             <div id="imagen">
-                <img src={big} alt="a salt bae"></img>
+                <img src={big} class="image" alt="a salt bae"></img>
                 <div className="overlay">
                     <div className="text">- Cocina desde dónde estes con lo que tengas -</div>
                 </div>
