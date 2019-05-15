@@ -52,7 +52,8 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #01FF70;
+    background-color: #FFDC00;
+    text-transform: uppercase;
   }
   
   #imagen:hover .overlay {
