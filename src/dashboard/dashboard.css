@@ -5,12 +5,14 @@
     border-color: blue
 }
 .container2{
-    text-align: center
+    text-align: center;
+    
 }
 
 #rec {
     margin: auto;
     width:95%;
+    height: 50vh
 }
 #search {
     margin: auto;
