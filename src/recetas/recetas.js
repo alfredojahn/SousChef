@@ -1,9 +1,9 @@
 import React from 'react';
 import './recetas.css'
-import pasta from './pasta.jpg';
-import camaron from './camarones.jpg';
-import arepa from './descarga.jpg';
-import image from './filet.jpg';
+import pasta from '../img/pasta.jpg';
+import camaron from '../img/camarones.jpg';
+import arepa from '../img/descarga.jpg';
+import image from '../img/filet.jpg';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
@@ -83,7 +83,7 @@ function SingleLineGridList(props) {
     <div className={classes.root}>
       <GridList cellHeight={250} className={classes.gridList} cols={2.5}>
         {tileData.map(tile => (
-          <Card>
+          
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
@@ -95,14 +95,14 @@ function SingleLineGridList(props) {
               }}
               actionIcon={
                 <CardActions>
-                 <Button  size="small" variant="contained" color="primary">
+                 <Button  size="small" variant="contained" color="primary" href="/Info">
                    Learn More
                  </Button>
                </CardActions>
               }
             />
           </GridListTile>
-          </Card>
+          
         ))}
       </GridList>
     </div>
