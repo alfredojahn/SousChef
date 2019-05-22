@@ -25,21 +25,15 @@ const styles = theme => ({
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
-  media: {
-    height: 140,
-  },
   button1:{
     backgroundColor:'white'
-  },
-  button2:{
-    height:'1vh',
-    width: '2vw',
   },
   gridList: {
     flexWrap: 'nowrap',
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
-    width:'100%'
+    width:'100%',
+    padding:'40px'
   },
   title: {
     color: 'white',
@@ -94,11 +88,11 @@ function SingleLineGridList(props) {
                 title: classes.title,
               }}
               actionIcon={
-                <CardActions>
+                
                  <Button  size="small" variant="contained" color="primary" href="/Info">
                    Learn More
                  </Button>
-               </CardActions>
+              
               }
             />
           </GridListTile>
