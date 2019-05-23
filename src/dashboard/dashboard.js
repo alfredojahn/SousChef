@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./dashboard.css";
 import PropTypes from "prop-types";
@@ -5,6 +6,7 @@ import { fade } from "@material-ui/core/styles/colorManipulator";
 import { withStyles } from "@material-ui/core/styles";
 import Recetas from "../recetas/recetas";
 import Paper from "@material-ui/core/Paper";
+
 
 import MenuAppBar from "../components/navbar";
 
@@ -113,6 +115,7 @@ class dashboard extends Component {
 
   render() {
     return (
+
       <div className="supercontainer">
         <MenuAppBar />
         <div className="container2">
