@@ -10,12 +10,6 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-
 
 const styles = theme => ({
   root: {
@@ -63,7 +57,7 @@ const styles = theme => ({
         author: 'author',
       },
       {
-        img: arepa,
+        img: arepa , 
         title: 'Arepa de Chicharron',
         author: 'author',
       },
