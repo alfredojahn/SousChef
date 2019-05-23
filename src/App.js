@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Dashboard from "./dashboard/dashboard";
+import Dashboard from "./components/dashboard.js";
 import Info from "./components/info";
 
 // Import the History component to be used below

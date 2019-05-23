@@ -10,7 +10,7 @@ import Paper from "@material-ui/core/Paper";
 
 
 import MenuAppBar from "./navbar";
-import Recetas from "../recetas/recetas";
+import Recetas from "./recetas";
 
 const User = () => {
   const bull = <span>•</span>;

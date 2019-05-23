@@ -4,11 +4,11 @@ import "./dashboard.css";
 import PropTypes from "prop-types";
 import { fade } from "@material-ui/core/styles/colorManipulator";
 import { withStyles } from "@material-ui/core/styles";
-import Recetas from "../recetas/recetas";
+import Recetas from "./recetas";
 import Paper from "@material-ui/core/Paper";
 
 
-import MenuAppBar from "../components/navbar";
+import MenuAppBar from "./navbar";
 
 const styles = theme => ({
   root: {
